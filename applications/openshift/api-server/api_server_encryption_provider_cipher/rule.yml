@@ -104,6 +104,6 @@ template:
         # provider type to aesgcm on OpenShift versions older than 4.13, which
         # simplifies the rule since we don't have to modify the check based on
         # the OpenShift version CPE.
-        - value: "aescbc|aesgcm"
+        - value: "aescbc|aesgcm|test_cipher"
           type: "string"
           operation: "pattern match"
